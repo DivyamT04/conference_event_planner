@@ -218,15 +218,13 @@ const ConferenceEvent = () => {
                                             <div className="inner">
                                                 <input type="checkbox" id={`meal_${index}`} checked={item.selected} onChange={() => gandleMealSelection(index)}/>
                                                 <label htmlFor={`meal_${index}`}>{item.name}</label>
+                                                </div>
 
-                                            </div>
-                                        </div className="meal_cost">${item.cost}</div>
+                                        <div className="meal_cost">${item.cost}</div>    
+                                        </div>       
                                     ))}
-
-                                </div>
+                                    </div>
                                 <div className="total_cost">Total Cost: </div>
-
-
                             </div>
                         </div>
                     ) : (
@@ -235,10 +233,6 @@ const ConferenceEvent = () => {
                         </div>
                     )
                 }
-
-
-
-
             </div>
         </>
 
